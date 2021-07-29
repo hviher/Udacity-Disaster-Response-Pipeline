@@ -7,7 +7,7 @@
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Installation](#installation)
-3. [Key File Descriptions](#file_description)
+3. [File Descriptions](#file_description)
 4. [Instructions](#instructions)
 5. [Web App](#webapp)
 6. [Licensing, Authors, Acknowledgments](#licensing)
@@ -22,7 +22,7 @@ The project will include a web app where emergency workers can input a new messa
 ## Installation <a name="installation"></a>
 There should be no necessary libraries to run the code here beyond the Anaconda distribution of Python. The code should run with no issues using Python versions 3.*.
 
-## Key File Descriptions <a name="file_description"></a>
+## File Descriptions <a name="file_description"></a>
 
 ### main directory:<br/>
 - **ETL Pipeline Preparation.ipynb** - Jupyter Notebook with step by step process used to help build process_data.py
@@ -30,6 +30,7 @@ There should be no necessary libraries to run the code here beyond the Anaconda 
 
 ### app folder:<br/>
 - **run.py** - python script to run the web app<br/>
+- **app/templates folder** - html template files for web app<br/>
 
 ### data folder:<br/>
 - **disaster_messages.csv** - data containing real messages that were sent during disaster events<br/>
@@ -52,3 +53,23 @@ To develop the disaster response model, run the following command lines:
 
 4. Go to http://0.0.0.0:3001/
  
+## Web App <a name="webapp"></a>
+
+Once the web app has launched, you will see on the main page a place to enter and submit a message which will return a classification for the message. 
+
+As well, a couple of visualizations are displayed on the data.
+<p align="center">
+  <img src="https://github.com/hviher/Udacity-Disaster-Response-Pipeline/blob/main/ScreenShot1.JPG" />
+</p>
+
+In this screenshot you can see the categories from submitting a message ('need food'):
+
+<p align="center">
+  <img src="https://github.com/hviher/Udacity-Disaster-Response-Pipeline/blob/main/ScreenShot2.JPG" /)
+</p>
+
+## Licensing, Authors, Acknowledgments <a name="licensing"></a>
+ 
+I would like to thank [Figure Eight](https://www.figure-eight.com/) for providing the data to complete this project. 
+The licensing can be found [here](https://github.com/hviher/Udacity-Disaster-Response-Pipeline/blob/main/LICENSE).
+Otherwise, feel free to use the code here as you would like!
